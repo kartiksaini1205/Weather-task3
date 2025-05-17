@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Web Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Advanced Interactive Web App</h1>
+    </header>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+      <h2>Interactive Quiz</h2>
+      <div id="quiz-box">
+        <p id="question"></p>
+        <div id="options"></div>
+        <button id="next-btn">Next Question</button>
+        <p id="score-display"></p>
+      </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <button class="nav" onclick="prevSlide()">⏪</button>
+        <img id="carousel-image" src="https://picsum.photos/id/1015/600/300" alt="carousel" />
+        <button class="nav" onclick="nextSlide()">⏩</button>
+      </div>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather-section">
+      <h2>Live Weather API</h2>
+      <input type="text" id="cityInput" placeholder="Enter city (Delhi, Mumbai...)" />
+      <button onclick="getWeather()">Check Weather</button>
+      <div id="weatherOutput"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
